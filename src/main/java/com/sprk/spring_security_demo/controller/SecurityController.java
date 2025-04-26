@@ -71,6 +71,8 @@ public class SecurityController {
 
 //        return jwtService.generateToken(authRequest);
 
+        System.out.println("\n\nGenerating Token\n\n");
+
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
 
